@@ -32,7 +32,6 @@ export const fetchWeatherData = (city) => {
     axios
       .get(url)
       .then((response) => {
-        console.log(response.data);
         dispatch(fetchweathersuccess(response.data));
       })
       .catch((error) => dispatch(fetchweatherfailure(error)));
