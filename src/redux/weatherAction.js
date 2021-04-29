@@ -25,7 +25,7 @@ const fetchweatherfailure = (error) => {
   };
 };
 
-export const fetchWeatherData = (city = "Gurgaon") => {
+export const fetchWeatherData = (city) => {
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=84858fc4b353000607a37aba83bc1339`;
   return (dispatch) => {
     dispatch(fetchweatherrequest);
